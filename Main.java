@@ -2,6 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
+/*
+ * Guessing number game
+ * @author Thomas Quigley
+*/ 
 
 public class Main implements Runnable, ActionListener{
 

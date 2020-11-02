@@ -1,0 +1,49 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f5aa27d4401, pid=702, tid=771
+#
+# JRE version: OpenJDK Runtime Environment (11.0.8+10) (build 11.0.8+10-post-Ubuntu-0ubuntu118.04.1)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.8+10-post-Ubuntu-0ubuntu118.04.1, mixed mode, sharing, tiered, compressed oops, serial gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x2401]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/runner/a8q5-quigt7936/core.702)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: Main
+
+Host: Intel(R) Xeon(R) CPU @ 2.30GHz, 4 cores, 512M, Ubuntu 18.04.5 LTS
+Time: Mon Nov  2 15:48:50 2020 UTC elapsed time: 99 seconds (0d 0h 1m 39s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f5a94001000):  JavaThread "XToolkt-Shutdown-Thread" [_thread_in_vm, id=771, stack(0x00007f5a9bdfe000,0x00007f5a9beff000)]
+
+Stack: [0x00007f5a9bdfe000,0x00007f5a9beff000],  sp=0x00007f5a9befc060,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x2401]
+C  [libjimage.so+0x30ea]
+C  [libjimage.so+0x35c6]  JIMAGE_FindResource+0xd6
+V  [libjvm.so+0x59097e]
+V  [libjvm.so+0x5936e0]
+V  [libjvm.so+0xd50b85]
+V  [libjvm.so+0xd4e51a]
+V  [libjvm.so+0xd51112]
+V  [libjvm.so+0x647127]
+V  [libjvm.so+0xa3c57a]
+V  [libjvm.so+0x844136]
+V  [libjvm.so+0x84502d]
+j  sun.awt.X11.XToolkit.lambda$init$0()V+0 java.desktop@11.0.8
+j  sun.awt.X11.XToolkit$$Lambda$9.run()V+4 java.desktop@11.0.8
+j  java.lang.Thread.run()V+11 java.base@11.0.8
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x84eb09]
+V  [libjvm.so+0x84cc4d]
+V  [libjvm.so+0x8f6c9c]
+V  [libjvm.so+0xd8996f]
